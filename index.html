@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Solar System</title>
+    <style>
+      
+/* Importing the Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Defining CSS variables for main background color and text color */
+:root {
+    --main-bg-color: rgba(51, 51, 51, 0.8); /* Dark grey background color */
+    --main-text-color: white; /* White text color */
+}
+
+/* Setting up the grid layout for the body */
+body {
+    display: grid; /* Using CSS Grid for layout */
+    grid-template-areas: /* Defining the grid areas */
+        "header"
+        "nav"
+        "feature"
+        "main"
+        "side"
+        "footer";
+    grid-template-rows: auto; /* All rows have automatic height */
+    grid-template-columns: 1fr; /* One column that takes up all available space */
+    font-family: 'Roboto', sans-serif; /* Using the Roboto font */
+    background-color: #f0f0f0; /* Light grey background color */
+    background-image: url('stars.jpg'); /* Background image */
+    background-size: cover; /* The background image covers the entire element */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+/* Styling the header */
+header {
+    grid-area: header; /* This is the header area */
+    background-color: var(--main-bg-color); /* Using the main background color */
+    color: var(--main-text-color); /* Using the main text color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    text-align: center; /* Center-aligned text */
+    font-size: 2em; /* Text size is 2 times the default size */
+}
+
+/* Styling the navigation bar with flexbox */
+nav {
+    grid-area: nav; /* This is the navigation area */
+    display: flex; /* Using Flexbox for layout */
+    justify-content: space-around; /* Items are evenly distributed in the line with equal space around them */
+    background-color: var(--main-bg-color); /* Using the main background color */
+    color: var(--main-text-color); /* Using the main text color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    font-size: 1.2em; /* Text size is 1.2 times the default size */
+}
+
+/* Styling the feature section with flexbox */
+.feature {
+    grid-area: feature; /* This is the feature area */
+    display: flex; /* Using Flexbox for layout */
+    flex-direction: column; /* The flexible items are displayed vertically, as a column */
+    justify-content: center; /* Items are centered in the line */
+    align-items: center; /* Items are centered in the cross-axis */
+    background-color: rgba(238, 238, 238, 0.8); /* Semi-transparent light grey background color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    text-align: center; /* Center-aligned text */
+    margin: 20px; /* 20 pixels of margin on all sides */
+}
+
+/* Styling the main content area */
+.main-content {
+    grid-area: main; /* This is the main content area */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    margin: 20px; /* 20 pixels of margin on all sides */
+}
+
+/* Styling the side content area */
+.side-content {
+    grid-area: side; /* This is the side content area */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    margin: 20px; /* 20 pixels of margin on all sides */
+}
+
+/* Styling the footer */
+footer {
+    grid-area: footer; /* This is the footer area */
+    background-color: var(--main-bg-color); /* Using the main background color */
+    color: var(--main-text-color); /* Using the main text color */
+    text-align: center; /* Center-aligned text */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    font-size: 1em; /* Text size is the default size */
+}
+
+/* Ensuring images do not exceed their container's width */
+img {
+    max-width: 100%; /* Maximum width is 100% of the parent container */
+    height: auto; /* Height is automatically adjusted to maintain the aspect ratio */
+}
+.side-content {
+    display: flex; /* This will create a flex container */
+    flex-wrap: wrap; /* This allows the items to wrap onto multiple lines */
+}
+
+.side-content h2 {
+    width: 100%; /* This makes the heading take up the full width of the container */
+}
+
+.side-content p {
+    width: 100%; /* This makes each paragraph take up half the width of the container */
+}
+</style>
+
+<head>
+    <title>The Solar System</title>
+    <!-- The style tag is where you put your CSS -->
+    <style>
+        /* Your CSS goes here */
+    </style>
+</head>
+<body>
+    <!-- The header of the page -->
+    <header>
+        <h1>The Solar System</h1>
+    </header>
+
+    <!-- The navigation bar of the page -->
+    <nav>
+        <!-- These are the links to the other pages -->
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+    </nav>
+
+    <!-- The feature section of the page -->
+    <section class="feature">
+        <h2>Welcome to our Solar System!</h2>
+        <!-- This is the feature image -->
+        <img src="solar_system.jpg" alt="Image of Solar System">
+        <!-- This is the feature text -->
+        <p>Explore the planets and learn more about the mysteries of space.</p>
+    </section>
+
+    <!-- The main content area of the page -->
+    <div class="main-content">
+        <h2>About The Solar System</h2>
+        <!-- This is the main content text -->
+        <p>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, the dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly—the moons—two are larger than the smallest planet, Mercury.</p>
+        <p>The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with the majority of the remaining mass contained in Jupiter. The four smaller inner planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer planets are giant planets, being substantially more massive than the terrestrials. The two largest, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the two outermost planets, Uranus and Neptune, are ice giants, being composed mostly of substances with relatively high melting points compared with hydrogen and helium, called volatiles, such as water, ammonia and methane. All eight planets have almost circular orbits that lie within a nearly flat disc called the ecliptic.</p>
+    </div>
+
+    <!-- The side content area of the page -->
+    <div class="side-content">
+        <h2>Did You Know?</h2>
+        <!-- This is the side content text -->
+        <p>The Solar System also contains smaller objects. The asteroid belt, which lies between the orbits of Mars and Jupiter, mostly contains objects composed, like the terrestrial planets, of rock and metal. Beyond Neptune's orbit lie the Kuiper belt and scattered disc, which are populations of trans-Neptunian objects composed mostly of ices, and beyond them a newly discovered population of sednoids. Within these populations are several dozen to possibly tens of thousands of objects large enough that they have been rounded by their own gravity. Such objects are categorized as dwarf planets. Identified dwarf planets include the asteroid Ceres and the trans-Neptunian objects Pluto and Eris. In addition to these two regions, various other small-body populations, including comets, centaurs and interplanetary dust clouds, freely travel between regions.</p>
+    </div>
+
+    <!-- The footer of the page -->
+    <footer>
+        <p>© 2024 The Solar System</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Earth</title>
+    <style>
+/* Importing the Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Defining CSS variables for main background color and text color */
+:root {
+    --main-bg-color: rgba(51, 51, 51, 0.8); /* Dark grey background color */
+    --main-text-color: white; /* White text color */
+}
+
+/* Setting up the grid layout for the body */
+body {
+    display: grid; /* Using CSS Grid for layout */
+    grid-template-areas: /* Defining the grid areas */
+        "header"
+        "nav"
+        "feature"
+        "main"
+        "side"
+        "footer";
+    grid-template-rows: auto; /* All rows have automatic height */
+    grid-template-columns: 1fr; /* One column that takes up all available space */
+    font-family: 'Roboto', sans-serif; /* Using the Roboto font */
+    background-color: #f0f0f0; /* Light grey background color */
+    background-image: url('stars.jpg'); /* Background image */
+    background-size: cover; /* The background image covers the entire element */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+/* Styling the header */
+header {
+    grid-area: header; /* This is the header area */
+    background-color: var(--main-bg-color); /* Using the main background color */
+    color: var(--main-text-color); /* Using the main text color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    text-align: center; /* Center-aligned text */
+    font-size: 2em; /* Text size is 2 times the default size */
+}
+
+/* Styling the navigation bar with flexbox */
+nav {
+    grid-area: nav; /* This is the navigation area */
+    display: flex; /* Using Flexbox for layout */
+    justify-content: space-around; /* Items are evenly distributed in the line with equal space around them */
+    background-color: var(--main-bg-color); /* Using the main background color */
+    color: var(--main-text-color); /* Using the main text color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    font-size: 1.2em; /* Text size is 1.2 times the default size */
+}
+
+/* Styling the feature section with flexbox */
+.feature {
+    grid-area: feature; /* This is the feature area */
+    display: flex; /* Using Flexbox for layout */
+    flex-direction: column; /* The flexible items are displayed vertically, as a column */
+    justify-content: center; /* Items are centered in the line */
+    align-items: center; /* Items are centered in the cross-axis */
+    background-color: rgba(238, 238, 238, 0.8); /* Semi-transparent light grey background color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    text-align: center; /* Center-aligned text */
+    margin: 20px; /* 20 pixels of margin on all sides */
+}
+
+/* Styling the main content area */
+.main-content {
+    grid-area: main; /* This is the main content area */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    margin: 20px; /* 20 pixels of margin on all sides */
+}
+
+/* Styling the side content area */
+.side-content {
+    grid-area: side; /* This is the side content area */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background color */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    margin: 20px; /* 20 pixels of margin on all sides */
+}
+
+/* Styling the footer */
+footer {
+    grid-area: footer; /* This is the footer area */
+    background-color: var(--main-bg-color); /* Using the main background color */
+    color: var(--main-text-color); /* Using the main text color */
+    text-align: center; /* Center-aligned text */
+    padding: 20px; /* 20 pixels of padding on all sides */
+    font-size: 1em; /* Text size is the default size */
+}
+
+/* Ensuring images do not exceed their container's width */
+img {
+    max-width: 100%; /* Maximum width is 100% of the parent container */
+    height: auto; /* Height is automatically adjusted to maintain the aspect ratio */
+}
+.side-content {
+    display: flex; /* This will create a flex container */
+    flex-wrap: wrap; /* This allows the items to wrap onto multiple lines */
+}
+
+.side-content h2 {
+    width: 100%; /* This makes the heading take up the full width of the container */
+}
+
+.side-content p {
+    width: 100%; /* This makes each paragraph take up half the width of the container */
+}
+    </style>
+<html>
+<head>
+    <title>The Solar System: Earth</title>
+    <!-- The style tag is where you put your CSS -->
+    <style>
+        /* Your CSS goes here */
+    </style>
+</head>
+<body>
+    <!-- The header of the page -->
+    <header>
+        <h1>The Solar System: Earth</h1> <!-- The title of the page -->
+    </header>
+
+    <!-- The navigation bar of the page -->
+    <nav>
+        <!-- These are the links to the other pages -->
+        <a href="index.html">Home</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+    </nav>
+
+    <!-- The feature section of the page -->
+    <section class="feature">
+        <h2>Welcome to Earth!</h2> <!-- The heading of the feature section -->
+        <!-- This is the feature image -->
+        <img src="earth.jpg" alt="Image of Earth">
+        <!-- This is the feature text -->
+        <p>Earth is the third planet from the Sun and is the largest of the terrestrial planets. The Earth is the only planet in our solar system not to be named after a Greek or Roman deity. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.</p>
+    </section>
+
+    <!-- The main content area of the page -->
+    <div class="main-content">
+        <h2>About Earth</h2> <!-- The heading of the main content section -->
+        <!-- This is the main content text -->
+        <p>Earth is the third planet from the Sun and is the largest of the terrestrial planets. The Earth is the only planet in our solar system not to be named after a Greek or Roman deity. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.</p>
+        <p>Earth is the only place in the known universe confirmed to host life. With a radius of 3,959 miles, Earth is the fifth largest planet in our solar system, and it's the only one known for sure to have liquid water on its surface. Earth is also unique in terms of monikers.</p>
+        <p>Earth is mostly iron, oxygen and silicon. If you could separate the Earth out into piles of material, you’d get 32.1 % iron, 30.1% oxygen, 15.1% silicon, and 13.9% magnesium. Of course, most of this iron is actually down at the core of the Earth.</p>
+    </div>
+
+    <!-- The side content area of the page -->
+    <div class="side-content">
+        <h2>Did You Know?</h2> <!-- The heading of the side content section -->
+        <!-- This is the side content text -->
+        <p>The Earth’s rotation is gradually slowing. This deceleration is happening almost imperceptibly, at approximately 17 milliseconds per hundred years, although the rate at which it occurs is not perfectly uniform. This has the effect of lengthening our days, but it happens so slowly that it could be as much as 140 million years before the length of a day will have increased to 25 hours.</p>
+        <p>Earth has a powerful magnetic field. This phenomenon is caused by the nickel-iron core of the planet, coupled with its rapid rotation. This field protects the Earth from the effects of solar wind.</p>
+    </div>
+
+    <!-- The footer of the page -->
+    <footer>
+        <p>© 2024 The Solar System</p> <!-- The copyright notice -->
+    </footer>
+</body>
+</html>
